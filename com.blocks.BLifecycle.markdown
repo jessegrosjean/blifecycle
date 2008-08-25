@@ -1,0 +1,1 @@
+The BLifeCycle plugin declares a single `com.blocks.BLifecycle.lifecycle` extension point that other plugins can use to get callbacks on the different stages of application startup. For example the `com.blocks.BCrashReporter` plugin uses the lifecycle extension point to get a callback and check for new crash logs on `applicationDidFinishLaunching`.

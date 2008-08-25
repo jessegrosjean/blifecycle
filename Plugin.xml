@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+	id="com.blocks.BLifecycle"
+	label="Lifecycle"
+	version="1.0.0"
+	info="Blocks Lifecycle">
+
+	<requirement bundle="com.blocks.Blocks" version="1.0.0" />
+
+	<extension-point id="lifecycle" label="Life Cycle" />
+
+	<extension point="com.blocks.Blocks.main">
+		<callback class="BLifecycleController sharedInstance" />
+	</extension>
+</plugin>
